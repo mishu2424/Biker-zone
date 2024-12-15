@@ -11,6 +11,10 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,10 +38,10 @@
       };
     </script>
   </head>
-  <body class="m-0">
-    <header class="font-poppins relative">
+  <body>
+    <header class="font-poppins lg:w-4/5 sm-device-width mx-auto">
       <div
-        class="navbar bg-base-100 lg:w-4/5 sm-device-width mx-auto fixed lg:left-36 lg:top-1 top-0 z-10  backdrop-blur-md"
+        class="navbar bg-base-100 lg:w-4/5 sm-device-width mx-auto fixed lg:left-[9.47rem] lg:top-1 top-0 z-50 backdrop-blur-md"
       >
         <div class="flex-1 text-left">
           <a class="btn btn-ghost text-xl font-bold">Go Ride</a>
@@ -86,11 +90,190 @@
           Login
         </button>
       </div>
-      <div class="lg:w-4/5 sm-device-width mx-auto lg:mt-[5%] mt-[10%] py-4">
-        <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
+      <div class="mx-auto lg:mt-[5%] mt-[10%] py-4 h-[80vh]">
+        <div
+          id="controls-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-[70vh] overflow-hidden rounded-lg">
+            <!-- Item 1 -->
+            <div class="duration-700 ease-in-out" data-carousel-item="active">
+              <div
+                class="banner w-full h-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
+              >
+                <div class="pl-0 pr-2 space-y-3 lg:text-left">
+                  <h1 class="text-3xl lg:text-6xl md:text-5xl">
+                    Ride-on R15 V4 <br />
+                    with Smile
+                  </h1>
+                  <p class="lg:text-base text-sm text-gray-400">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do
+                    <br class="hidden lg:block" />
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                  </p>
+                  <button class="btn bg-[#E76F51] text-white px-7 rounded">
+                    Purchase
+                  </button>
+                </div>
+                <div class="banner-img lg:w-1/2 w-3/4">
+                  <img
+                    src="./images/slider/bike1.png"
+                    class="w-full"
+                    alt="Bike1"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <div
+                class="banner w-full h-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
+              >
+                <div class="pl-0 pr-2 space-y-3 lg:text-left">
+                  <h1 class="text-3xl lg:text-6xl md:text-5xl">
+                    Ride-on R15 V4 <br />
+                    with Smile
+                  </h1>
+                  <p class="lg:text-base text-sm text-gray-400">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do
+                    <br class="hidden lg:block" />
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                  </p>
+                  <button class="btn bg-[#E76F51] text-white px-7 rounded">
+                    Purchase
+                  </button>
+                </div>
+                <div class="banner-img lg:w-1/2 w-3/4">
+                  <img
+                    src="./images/slider/bike2.png"
+                    class="w-full"
+                    alt="Bike1"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="duration-700 ease-in-out" data-carousel-item>
+              <div
+                class="banner w-full h-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
+              >
+                <div class="pl-0 pr-2 space-y-3 lg:text-left">
+                  <h1 class="text-3xl lg:text-6xl md:text-5xl">
+                    Ride-on R15 V4 <br />
+                    with Smile
+                  </h1>
+                  <p class="lg:text-base text-sm text-gray-400">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do
+                    <br class="hidden lg:block" />
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                  </p>
+                  <button class="btn bg-[#E76F51] text-white px-7 rounded">
+                    Purchase
+                  </button>
+                </div>
+                <div class="banner-img lg:w-1/2 w-3/4">
+                  <img
+                    src="./images/slider/bike3.png"
+                    class="w-full"
+                    alt="Bike1"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <div
+                class="banner w-full h-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
+              >
+                <div class="pl-0 pr-2 space-y-3 lg:text-left">
+                  <h1 class="text-3xl lg:text-6xl md:text-5xl">
+                    Ride-on R15 V4 <br />
+                    with Smile
+                  </h1>
+                  <p class="lg:text-base text-sm text-gray-400">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do
+                    <br class="hidden lg:block" />
+                    amet sint. Velit officia consequat duis enim velit mollit.
+                  </p>
+                  <button class="btn bg-[#E76F51] text-white px-7 rounded">
+                    Purchase
+                  </button>
+                </div>
+                <div class="banner-img lg:w-1/2 w-3/4">
+                  <img
+                    src="./images/slider/bike4.png"
+                    class="w-full"
+                    alt="Bike1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- <div class="carousel w-full h-full">
+          <div id="slide1" class="carousel-item relative w-full h-full">
             <div
-              class="banner w-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
+              class="banner w-full h-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
             >
               <div class="pl-0 pr-2 space-y-3 lg:text-left">
                 <h1 class="text-3xl lg:text-6xl md:text-5xl">
@@ -115,18 +298,18 @@
               </div>
             </div>
             <div
-              class="absolute left-0 lg:left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
             >
               <a href="#slide4" class="text-3xl">❮</a>
               <a href="#slide2" class="text-3xl text-[#E76F51]">❯</a>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
+          <div id="slide2" class="carousel-item relative w-full h-full">
             <div
-              class="banner w-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
+              class="banner w-full h-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
             >
               <div class="pl-0 pr-2 space-y-3 lg:text-left">
-                <h1 class="text-6xl">
+                <h1 class="text-3xl lg:text-6xl md:text-5xl">
                   Ride-on R15 V4 <br />
                   with Smile
                 </h1>
@@ -159,7 +342,7 @@
               class="banner w-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
             >
               <div class="pl-0 pr-2 space-y-3 lg:text-left">
-                <h1 class="text-6xl">
+                <h1 class="text-3xl lg:text-6xl md:text-5xl">
                   Ride-on R15 V4 <br />
                   with Smile
                 </h1>
@@ -192,7 +375,7 @@
               class="banner w-full flex flex-col lg:flex-row items-center justify-center p-4 bg-[#f9e7e3]"
             >
               <div class="pl-0 pr-2 space-y-3 lg:text-left">
-                <h1 class="text-6xl">
+                <h1 class="text-3xl lg:text-6xl md:text-5xl">
                   Ride-on R15 V4 <br />
                   with Smile
                 </h1>
@@ -220,9 +403,10 @@
               <a href="#slide1" class="text-3xl text-[#E76F51]">❯</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </header>
+
     <main class="font-poppins">
       <!-- Featured Bikes -->
       <section class="lg:w-4/5 mx-auto sm-device-width mt-20">
@@ -267,7 +451,7 @@
         <div
           class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-7 gap-10 lg:gap-15"
         >
-          <div class="card bg-base-100 lg:w-96 w-full shadow-xl">
+          <div class="card bg-base-100 lg:w-auto w-full shadow-xl">
             <figure>
               <img
                 class="card-body px-4 lg:px-6 pb-0"
@@ -288,7 +472,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 lg:w-96 w-full shadow-xl">
+          <div class="card bg-base-100 lg:w-auto w-full shadow-xl">
             <figure>
               <img
                 class="card-body px-4 lg:px-6 pb-0"
@@ -297,7 +481,9 @@
               />
             </figure>
             <div class="card-body px-4 lg:px-6 py-6">
-              <h2 class="card-title">Motorcycles & Scooters</h2>
+              <h2 class="card-title whitespace-nowrap">
+                Motorcycles & Scooters
+              </h2>
               <p class="text-base text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
                 fermentum amet faucibus sed id nisi lectus at.
@@ -311,7 +497,7 @@
               </div>
             </div>
           </div>
-          <div class="card bg-base-100 lg:w-96 w-full shadow-xl">
+          <div class="card bg-base-100 lg:w-auto w-full shadow-xl">
             <figure>
               <img
                 class="card-body px-4 lg:px-6 pb-0"
@@ -342,9 +528,11 @@
           Happy <span class="text-classic-primary">Clients says</span>
         </h2>
         <div
-          class="grid lg:grid-cols-3 lg:grid-rows-[auto] md:grid-cols-2 grid-cols-1 gap-20 lg:gap-10 md:gap-20 mt-16"
+          class="grid xl:grid-cols-3 lg:grid-cols-3 lg:grid-rows-[auto] md:grid-cols-2 grid-cols-1 gap-20 lg:gap-10 md:gap-20 mt-16"
         >
-          <div class="card bg-base-100 lg:w-96 md:w-auto w-full border-2 py-4">
+          <div
+            class="card bg-base-100 lg:w-auto md:w-auto w-full border-2 py-4"
+          >
             <figure class="">
               <img
                 class="rounded-[50%] w-[200px]"
@@ -368,7 +556,9 @@
               <h4 class="text-[#252B42] font-semibold text-sm">Banker</h4>
             </div>
           </div>
-          <div class="card bg-base-100 lg:w-96 md:w-auto w-full border-2 py-4">
+          <div
+            class="card bg-base-100 lg:w-auto md:w-auto w-full border-2 py-4"
+          >
             <figure class="">
               <img
                 class="rounded-[50%] w-[200px]"
@@ -392,7 +582,9 @@
               <h4 class="text-[#252B42] font-semibold text-sm">Banker</h4>
             </div>
           </div>
-          <div class="card bg-base-100 lg:w-96 md:w-auto w-full border-2 py-4">
+          <div
+            class="card bg-base-100 lg:w-auto md:w-auto w-full border-2 py-4"
+          >
             <figure class="">
               <img
                 class="rounded-[50%] w-[200px]"
@@ -480,7 +672,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer bg-[#0B0D17] text-base-content p-10 text-white flex flex-col lg:flex-row lg:items-center justify-evenly">
+    <footer
+      class="footer bg-[#0B0D17] text-base-content p-10 text-white flex flex-col lg:flex-row lg:items-center justify-evenly"
+    >
       <nav class="space-y-3">
         <div class="flex items-center gap-4">
           <a class="link link-hover">Download Now</a>
@@ -500,13 +694,24 @@
         <h6 class="footer-title">Get the App</h6>
         <div class="grid grid-cols-1 gap-4">
           <a>
-            <img class="w-1/2" src="./images/others/ios.png" alt="ios logo" srcset="">
+            <img
+              class="w-1/2"
+              src="./images/others/ios.png"
+              alt="ios logo"
+              srcset=""
+            />
           </a>
           <a>
-           <img class="w-1/2" src="./images/others/android.png" alt="android logo" srcset="">
+            <img
+              class="w-1/2"
+              src="./images/others/android.png"
+              alt="android logo"
+              srcset=""
+            />
           </a>
         </div>
       </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>
